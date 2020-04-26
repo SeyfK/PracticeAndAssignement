@@ -8,6 +8,7 @@ public class SortAscending {
 
         int arr[] = {6, 32, 65, 87, 9};
         System.out.println(Arrays.toString(sortAscending(arr)));
+
     }
 
 
@@ -27,7 +28,8 @@ public class SortAscending {
             }
         }
 
-        return arr; }
+        return arr;
+    }
 
 /*
 The easiest way to sort an Array is to use the Arrays.sort().
@@ -43,5 +45,18 @@ I return the array out of this method.
  */
 
 
+//    public static void sortA(int[] arr) {
+//        int temp;
+//
+//        for (int i = 0; i < arr.length; i++) {
+//            for (int j = 0; j < arr.length; j++) {
+//                if (arr[i] == arr[j]) {
+//                    temp = arr[j];
+//                    arr[j] = arr[i];
+//                    arr[i] = temp;
+//                }
+//            }
+//        }
+//    }
 
-}
+    }

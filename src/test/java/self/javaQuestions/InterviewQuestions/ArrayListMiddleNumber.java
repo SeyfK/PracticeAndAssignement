@@ -7,17 +7,15 @@ public class ArrayListMiddleNumber {
 
 
     public static void main(String[] args) {
-findArrayListMiddleNumber();
+        mid();
 
     }
 
 
-    public static void findArrayListMiddleNumber(){
-
-        List<Integer> num = Arrays.asList(1,2,3,4,5);
-        int mid = num.get(num.size()/2);
+    public static void mid(){
+        List<Integer> list = Arrays.asList(1,2,3,4,5);
+        int mid = list.get(list.size()/2);
         System.out.println("mid number is "+mid);
-
 
     }
 }

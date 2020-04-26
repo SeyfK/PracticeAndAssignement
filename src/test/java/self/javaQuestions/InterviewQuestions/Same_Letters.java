@@ -12,8 +12,8 @@ Ex: same("aaaaaabc", "ccccccab"); -> true , same("abc", "abb"); -> false:
 
 public class Same_Letters {
     public static void main(String[] args) {
-        System.out.println(same("hellooooo","hello"));
-        System.out.println(Same("Helloooooo","Hello"));
+       System.out.println(same("hellooooo","hello"));
+      //  System.out.println(Same("hellO","hello"));
 
 
 
@@ -41,7 +41,7 @@ public class Same_Letters {
     public static boolean Same(String str1, String str2) {
         str1 = new TreeSet<String>(Arrays.asList(str1.split(""))).toString();
         str2 = new TreeSet<String>(Arrays.asList(str2.split(""))).toString();
-        return str1.equals(str2);
+        return str1.equalsIgnoreCase(str2);
     }
 
 
@@ -53,9 +53,6 @@ public class Same_Letters {
 //            if (str2.isEmpty()) {
 //                return true; 
 //            }else return false; 	}
-
-
-
 
 
 

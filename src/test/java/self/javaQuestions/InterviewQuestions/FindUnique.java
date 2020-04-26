@@ -6,6 +6,8 @@ import java.util.Collections;
 public class FindUnique {
 
     public static void main(String[] args) {
+
+        System.out.println(Un("abccccddd"));
         System.out.println(unique("aaabbbcde"));
     }
 
@@ -38,6 +40,34 @@ Ex: unique("AAABBBCCCDEF") ==> "DEF";
         for(String each : str.split(""))
             result += ( (Collections.frequency(Arrays.asList(str.split("")), each)) ==1 ) ? each : "";
         return result; }
+
+
+
+
+
+
+
+      public static String Un(String str) {
+          String uni = "";
+
+          for (int i = 0; i < str.length(); i++) {
+              int count = 0;
+              for (int j = 0; j < str.length(); j++) {
+                  if (("" + str.charAt(i)).equalsIgnoreCase("" + str.charAt(j))) {
+                      count++;
+                  }
+
+              }
+
+              if (count == 1) {
+                  uni += str.charAt(i);
+              }
+
+          }
+
+          return uni;
+      }
+
 
 
 

@@ -17,13 +17,10 @@ public class Frequency {
                 if(str.substring(i, i+1).equals(str2.substring(z, z+1)))
                     num++;
 
-            str3 +=""+str2.substring(z,z+1)+num;
+            str3 +=str2.substring(z,z+1)+num;
         }
         System.out.println(str3);
     }
-
-
-
 
 
     // second Way:
@@ -61,24 +58,23 @@ public class Frequency {
 
 
     public static void main(String[] args) {
-//        frequencies("javajava");
-        frequencies2("javajava");
+        frequencies("javajava");
+//        frequencies2("javajava");
 //        frequencies3("javajava");
 
-
-        //frequency  for main
-        String word = "javajava";
-        // need to convert to charArray
-        char[] charValue = word.toCharArray();
-        Map<Character, Integer> map = new HashMap<>();
-        for (char c : charValue) {
-            if (map.containsKey(c)) {
-                map.put(c, 1 + map.get(c));
-            } else {
-                map.put(c, 1);
-            }
-        }
-        System.out.println(map);
+//        //frequency  for main
+//        String word = "javajava";
+//        // need to convert to charArray
+//        char[] charValue = word.toCharArray();
+//        Map<Character, Integer> map = new HashMap<>();
+//        for (char c : charValue) {
+//            if (map.containsKey(c)) {
+//                map.put(c, 1 + map.get(c));
+//            } else {
+//                map.put(c, 1);
+//            }
+//        }
+//        System.out.println(map);
 
 
 

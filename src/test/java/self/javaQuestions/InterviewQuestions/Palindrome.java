@@ -3,24 +3,31 @@ package self.javaQuestions.InterviewQuestions;
 public class Palindrome {
     public static void main(String[] args) {
 
-        //palindromeInt cemre abla
-        System.out.println("cemre abla methodu int palindrome:   "+palindromeInt(55));
-        String str = "level";
-        //
-        String reverse="";
+        System.out.println("palindrome string:" +palindromeString("ey edip adanada pide ye"));
 
-    boolean yesSir =true;
-        for (int i = str.length()-1; i >= 0; i--) {
-            reverse += str.charAt(i);
-            //avaj
-        }
-        if(reverse.equalsIgnoreCase(str)) {
-            System.out.println(yesSir);
-        }else {
-            System.out.println("This friend is not a palindrome");
+    }
 
+    public static boolean palindromeString(String  str){
+        String reversed="";
+        for (int i = str.length()-1; i>=0; i--){
+            reversed+=str.charAt(i);
         }
-      //  System.out.println(isPalindrome(99));
+        return str.equalsIgnoreCase(reversed);
+
+
+    }
+
+
+    //int palindrome cemre abla methodu
+    public static boolean palindromeInt(int num){
+        String str= Integer.toString(num);
+        String reversed="";
+        for (int i = str.length()-1; i>=0; i--){
+            reversed+=str.charAt(i);
+        }
+        return str.equalsIgnoreCase(reversed);
+
+
     }
 
     //int palindrome
@@ -41,17 +48,15 @@ public class Palindrome {
 
     }
 
-//int palindrome cemre abla methodu
-    public static boolean palindromeInt(int num){
-      String str= Integer.toString(num);
-      String reversed="";
-      for (int i = str.length()-1; i>=0; i--){
-          reversed+=str.charAt(i);
-      }
-        return str.equalsIgnoreCase(reversed);
 
 
-    }
+
+
+
+
+
+
+
 
 
 

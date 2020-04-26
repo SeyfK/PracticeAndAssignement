@@ -8,14 +8,15 @@ public class FindMinimum {
     }
 
 
-    public static int minValue( int[]  n ) {
-
+    public static int minValue(int[] n){
         int min = Integer.MAX_VALUE;
-        for (int i = 0; i < n.length; i++) {
-            if( n [i] < min)
-                min = n [i];
+        for(int i = 0; i<n.length; i++){
+            if(n[i]<min)
+                min=n[i];
         }
+
         return min;
+
     }
 }
 
